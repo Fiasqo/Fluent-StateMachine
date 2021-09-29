@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiasqo.StateMachine", "Fiasqo.StateMachine\Fiasqo.StateMachine.csproj", "{00DDA816-9BCC-40AB-B8A7-DFD2072609DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiasqo.StateMachine.Tests", "Fiasqo.StateMachine.Tests\Fiasqo.StateMachine.Tests.csproj", "{9360C5CB-5D3D-43C6-AF4D-71385B770C3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00DDA816-9BCC-40AB-B8A7-DFD2072609DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DDA816-9BCC-40AB-B8A7-DFD2072609DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DDA816-9BCC-40AB-B8A7-DFD2072609DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DDA816-9BCC-40AB-B8A7-DFD2072609DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9360C5CB-5D3D-43C6-AF4D-71385B770C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9360C5CB-5D3D-43C6-AF4D-71385B770C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9360C5CB-5D3D-43C6-AF4D-71385B770C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9360C5CB-5D3D-43C6-AF4D-71385B770C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
