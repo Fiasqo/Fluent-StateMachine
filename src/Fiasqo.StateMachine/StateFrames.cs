@@ -11,7 +11,8 @@ internal class StateFrames<TContext> : List<StateFrame<TContext>>
 
     public bool TryFindIndexByStateType<TState>(out int index)
         where TState : State<TContext> {
-        index = FindIndex(sf => sf.StateContainer.State is TState);
+        index = FindIndex(sf => sf.StateContainer.State is TState &&
+                                !sf.StateContainer.State.GetType().IsSubclassOf(typeof(TState)));
 
         return index >= 0;
     }
