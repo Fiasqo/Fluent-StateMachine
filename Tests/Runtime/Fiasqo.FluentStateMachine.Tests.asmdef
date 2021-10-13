@@ -1,0 +1,12 @@
+{
+    "name": "Fiasqo.FluentStateMachine.Tests",
+    "rootNamespace": "Fiasqo.FluentStateMachine.Tests",
+    "references": [
+        "Fiasqo.FluentStateMachine"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

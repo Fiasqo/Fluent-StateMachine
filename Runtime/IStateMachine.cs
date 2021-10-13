@@ -1,4 +1,4 @@
-﻿namespace Fiasqo.StateMachine {
+﻿namespace Fiasqo.FluentStateMachine {
 public interface IStateMachine {
     void Enable();
     void Disable();

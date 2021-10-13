@@ -1,4 +1,4 @@
-﻿namespace Fiasqo.StateMachine {
+﻿namespace Fiasqo.FluentStateMachine {
 public abstract class State<TContext>
     where TContext : class {
     public virtual void OnEnter(TContext context) { }

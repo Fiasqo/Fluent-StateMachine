@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Fiasqo.StateMachine {
+namespace Fiasqo.FluentStateMachine {
 internal readonly struct StateFrame<TContext> 
     where TContext : class {
     internal IStateContainer<TContext> StateContainer { get; }

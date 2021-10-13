@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Fiasqo.StateMachine {
+namespace Fiasqo.FluentStateMachine {
 public class StateMachineBuilder<TContext>
     : StateMachineBuilder<TContext>.IDeclareFirstStateStage,
       StateMachineBuilder<TContext>.IDeclareSecondStateStage,

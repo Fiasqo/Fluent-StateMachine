@@ -1,8 +1,8 @@
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Fiasqo.StateMachine.Tests")]
+[assembly: InternalsVisibleTo("Fiasqo.FluentStateMachine.Tests")]
 
-namespace Fiasqo.StateMachine {
+namespace Fiasqo.FluentStateMachine {
 internal interface IStateContainer<TContext>
     where TContext : class {
     State<TContext> State { get; }

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Fiasqo.StateMachine {
+namespace Fiasqo.FluentStateMachine {
 internal class StateFrames<TContext> : List<StateFrame<TContext>>
     where TContext : class {
     public StateFrames() { }

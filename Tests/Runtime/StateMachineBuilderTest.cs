@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using NUnit.Framework;
 
-namespace Fiasqo.StateMachine.Tests {
+namespace Fiasqo.FluentStateMachine.Tests {
 [SuppressMessage("ReSharper", "InconsistentNaming")]
-public class StateMachineBuilderTests {
+public class StateMachineBuilderTest {
     [Test]
     public void Create_ContextIsNull_ThrowsException() {
         TestDelegate code = () => StateMachineBuilder<Context>.Create(null);

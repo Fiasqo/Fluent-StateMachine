@@ -4,10 +4,10 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using NUnit.Framework;
 
-namespace Fiasqo.StateMachine.Tests {
+namespace Fiasqo.FluentStateMachine.Tests {
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 [TestOf(typeof(StateContainer<Context>))]
-public class StateContainerTests {
+public class StateContainerTest {
     [TestCaseSource(nameof(StateGet_ReturnsCorrectState_Cases))]
     public void StateGet_ReturnsCorrectState(object stateContainerAsObject, object expectedState) {
         var stateContainer = (IStateContainer<Context>) (StateContainer<Context>) stateContainerAsObject;

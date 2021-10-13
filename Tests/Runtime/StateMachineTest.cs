@@ -5,10 +5,10 @@ using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
 
-namespace Fiasqo.StateMachine.Tests {
+namespace Fiasqo.FluentStateMachine.Tests {
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 [TestOf(typeof(StateMachine<Context>))]
-public class StateMachineTests {
+public class StateMachineTest {
     [Test]
     public void CurrentStateGet_ReturnsCorrectState() {
         var stateMachine = CreateStateMachine(out var state);

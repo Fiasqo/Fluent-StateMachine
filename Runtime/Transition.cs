@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Fiasqo.StateMachine.Tests")]
+[assembly: InternalsVisibleTo("Fiasqo.FluentStateMachine.Tests")]
 
-namespace Fiasqo.StateMachine {
+namespace Fiasqo.FluentStateMachine {
 internal sealed class Transition<TContext>
     : ITransition<TContext>
     where TContext : class {

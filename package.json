@@ -1,0 +1,16 @@
+{
+  "name": "com.fiasqo.fluent-statemachine",
+  "version": "1.0.0",
+  "displayName": "Fluent-StateMachine",
+  "description": "This package lets you to create a state machine using a fluent interface.",
+  "unity": "2020.3",
+  "keywords": [
+    "statemachine",
+    "fiasqo"
+  ],
+  "author": {
+    "name": "Fiasqo",
+    "url": "https://github.com/Fiasqo"
+  },
+  "type": "library"
+}

@@ -1,10 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
 using NUnit.Framework;
 
-namespace Fiasqo.StateMachine.Tests {
+namespace Fiasqo.FluentStateMachine.Tests {
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 [TestOf(typeof(Transition<Context>))]
-public class TransitionTests {
+public class TransitionTest {
     [Test]
     public void StateContainerGet_ReturnsCorrectState() {
         var stateContainer = new MoqStateContainer();
@@ -25,6 +25,7 @@ public class TransitionTests {
         var transition = (ITransition<Context>) new Transition<Context>(context => true, new MoqStateContainer());
 
         Assert.IsTrue(transition.IsValid(new Context()));
+        Assert.IsTrue(false);
     }
 
 #region Private Members
