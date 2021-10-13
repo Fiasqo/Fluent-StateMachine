@@ -25,7 +25,6 @@ public class TransitionTest {
         var transition = (ITransition<Context>) new Transition<Context>(context => true, new MoqStateContainer());
 
         Assert.IsTrue(transition.IsValid(new Context()));
-        Assert.IsTrue(false);
     }
 
 #region Private Members
