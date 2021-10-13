@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-
-[assembly: InternalsVisibleTo("Fiasqo.FluentStateMachine.Tests")]
 
 namespace Fiasqo.FluentStateMachine {
 internal sealed class StateContainer<TContext>
