@@ -30,7 +30,7 @@ public class StateMachineBuilder<TContext>
 
     ISetTransitionConditionStage ISetTransitionDestinationStage.Goto<TState>() {
         var condition = _selectedStateFrameTransitionCondition;
-        var stateToGo = _stateFrames[_stateFrames.GetIndexOfExistsOrAdd<TState>()].StateContainer;
+        var stateToGo = _stateFrames[_stateFrames.GetIndexOfExistsOrAdded<TState>()].StateContainer;
 
         _stateFrames[_indexSelectedStateFrame].Transitions.Add(new Transition<TContext>(condition, stateToGo));
 
@@ -68,7 +68,7 @@ public class StateMachineBuilder<TContext>
         where TState : State<TContext>, new() {
         if (cfg == null) { throw new ArgumentNullException(nameof(cfg)); }
         
-        _indexSelectedStateFrame = _stateFrames.GetIndexOfExistsOrAdd<TState>();
+        _indexSelectedStateFrame = _stateFrames.GetIndexOfExistsOrAdded<TState>();
 
         cfg.Invoke(this);
     }

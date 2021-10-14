@@ -17,7 +17,7 @@ internal class StateFrames<TContext> : List<StateFrame<TContext>>
         return index >= 0;
     }
 
-    public int GetIndexOfExistsOrAdd<TState>()
+    public int GetIndexOfExistsOrAdded<TState>()
         where TState : State<TContext>, new() {
         if (TryFindIndexByStateType<TState>(out var stateFrameIndex)) { return stateFrameIndex; }
 
