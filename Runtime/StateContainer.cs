@@ -5,18 +5,22 @@ namespace Fiasqo.FluentStateMachine {
 internal sealed class StateContainer<TContext>
     : IStateContainer<TContext>
     where TContext : class {
-    internal StateContainer(State<TContext> state, IReadOnlyList<ITransition<TContext>> transitions) {
-        _state = state ?? throw new ArgumentNullException(nameof(state));
+    private readonly IReadOnlyList<ITransition<TContext>> _transitions;
+    
+    public StateContainer(State<TContext> state, IReadOnlyList<ITransition<TContext>> transitions) {
+        State = state ?? throw new ArgumentNullException(nameof(state));
         _transitions = transitions ?? throw new ArgumentNullException(nameof(transitions));
     }
 
-    State<TContext> IStateContainer<TContext>.State => _state;
+    public State<TContext> State { get; }
 
-    bool IStateContainer<TContext>.TryGetNextState(TContext context, out IStateContainer<TContext> nextStateContainer) {
+    public bool TryGetNextState(TContext context, out IStateContainer<TContext> nextStateContainer) {
         nextStateContainer = null;
 
         foreach (var transition in _transitions) {
-            if (!transition.IsValid(context)) { continue; }
+            if (!transition.IsValid(context)) {
+                continue;
+            }
 
             nextStateContainer = transition.StateContainer;
             return true;
@@ -24,8 +28,5 @@ internal sealed class StateContainer<TContext>
 
         return false;
     }
-
-    private readonly State<TContext> _state;
-    private readonly IReadOnlyList<ITransition<TContext>> _transitions;
 }
 }

@@ -19,7 +19,9 @@ internal class StateFrames<TContext> : List<StateFrame<TContext>>
 
     public int GetIndexOfExistsOrAdded<TState>()
         where TState : State<TContext>, new() {
-        if (TryFindIndexByStateType<TState>(out var stateFrameIndex)) { return stateFrameIndex; }
+        if (TryFindIndexByStateType<TState>(out var stateFrameIndex)) {
+            return stateFrameIndex;
+        }
 
         stateFrameIndex = Count;
         Add(new StateFrame<TContext>(new TState()));
